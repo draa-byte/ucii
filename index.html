@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>web khusus buat kamu</title>
+    <style>
+        :root {
+            --color-bg: #ffffff; 
+            --color-text-primary: #111827;
+            --color-text-secondary: #6b7280;
+            --color-accent: #ec4899;
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Poppins', sans-serif;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        /* Reset & base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            background: var(--color-bg);
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+        }
+        /* Header */
+        header {
+            background-color: white;
+            padding: 16px 30px;
+            border-bottom: 1px solid #e0e0e0;
+            background: var(--color-bg);
+            box-shadow: 0 1px 6px var(--shadow-light);
+
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+        .logo {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            letter-spacing: 0.05em;
+
+        }
+        .nav-links a {
+            color: var(--color-text-secondary);
+            transition: color var(--transition);
+        }
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--color-accent);
+            border-radius: 2px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform var(--transition);
+        }
+        .nav-links a:hover,
+        .nav-links a:focus {
+            color: var(--color-accent);
+        }
+        .nav-links a:hover::after,
+        .nav-links a:focus::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 3.25rem;
+            color: var(--color-text-primary);
+            margin: 0 0 1rem;
+            line-height: 1.1;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero p {
+            font-size: 1.125rem;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+            color: var(--color-text-secondary);
+        }
+        .btn-primary {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #db2777; /* Warna pink yang sedikit lebih gelap */
+}
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background: #db2777;
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(219, 39, 119, 0.3);
+            outline: none;
+        }
+        /* Features Section */
+        .features {
+            padding-top: 4rem;
+            padding-bottom: 6rem;
+            display: grid;
+            gap: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            max-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .feature-card {
+            background: var(--color-card-bg);
+            border-radius: var(--radius);
+            box-shadow: 0 2px 8px var(--shadow-light);
+            padding: 2rem;
+            color: var(--color-text-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: box-shadow var(--transition), transform var(--transition);
+        }
+        .feature-card:focus {
+            box-shadow: 0 6px 20px rgba(236, 72, 153, 0.3);
+            transform: translateY(-6px);
+        }
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            stroke: var(--color-accent);
+        }   
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 1.25rem;
+            font-size: 0.9rem;
+            }
+        /* Responsive typography */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+            .btn-primary {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container" aria-label="Main navigation">
+            <a href="index.html" class="logo" tabindex="0" aria-label="Bucin logo">MOU</a>
+        
+                <marquee behavior="" direction="">Hai sucinya aku Semoga selalu semangatt hari-harinya ya... HARUS SEMANGAT KAN ADA AKU HEHE💖</marquee>
+            
+        </nav>
+    </header>
+    <table align="center"><td style="background-color: #f8f6f7;">
+    <main>
+        <section class="hero" aria-label="Hero section">
+            <h1>Selamat di Website Bucin Aku</h1>
+            <p>Ini aku buat khusus untuk kamu tau<br>pokoknya kamu harus suka haha🌷</p>
+            <a href="hatiaku.html" class="btn-primary" role="button" tabindex="0">Buka ini dong 💌</a>
+        </section>
+     </td></table>          
+    <footer>
+        &copy; Made with my sincere love 💖
+    </footer>
+</body>
+</html>
